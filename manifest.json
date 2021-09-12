@@ -1,6 +1,8 @@
 {
     "name": "ZapHS",
     "description": "Cria um link para o Whatsapp na tela de visualização de contato do HubSpot",
+    "author": "Aleandro Almeida <aleandro@xandri.com.br>",
+    "homepage_url": "https://xandrix.com.br/zaphs",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
