@@ -1,0 +1,33 @@
+{
+    "name": "ZapHS",
+    "description": "Cria um link para o Whatsapp na tela de visualização de contato do HubSpot",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://app.hubspot.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://app.hubspot.com/*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "zaplink.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "/images/ZapLink_16.png",
+        "32": "/images/ZapLink_32.png",
+        "48": "/images/ZapLink_48.png",
+        "128": "/images/ZapLink_128.png"
+    }
+}
